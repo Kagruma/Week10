@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dom Manipulation Hard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: red;
+    }
+
+    button {
+      padding: 10px;
+    }
+
+    .bg-red {
+      background-color: red;
+    }
+
+    .bg-white {
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="buttons">
+    <button id="red" onmousedown="red()">Turn it RED</button>
+    
+
+    <div id="buttons">
+    <button id="white" onmousedown="white()">
+      Turn it WHITE
+    </button>
+  </div>
+    <script>
+     // Do Stuff Here
+     function red(){
+   document.getElementById("red").innerHTML = "BLOOD FOR THE BLOOD GOD";
+document.body.style.backgroundColor = "red"
+}
+function white(){
+   document.getElementById("white").innerHTML = "ONLY SINNERS SURRENDER";
+document.body.style.backgroundColor = "white"
+}
+    </script>
+</body>
+</html>
